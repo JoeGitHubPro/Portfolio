@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Portfolio.AboutTopic>
+
+@{
+    ViewBag.Title = "About";
+}
+<br />
+
+<h2>About</h2>
+<hr />
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-warning" })
+</p>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AboutCategory.AboutTopic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopicDescrption)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AboutCategory.AboutTopic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopicDescrption)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-info" }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.ID }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

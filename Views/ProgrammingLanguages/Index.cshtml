@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Portfolio.ProgrammingLanguage>
+
+@{
+    ViewBag.Title = "ProgrammingLanguage";
+}
+
+<h2>ProgrammingLanguage</h2>
+<hr />
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-warning" })
+</p>
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProgrammingLanguage1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pecentage)
+        </th>
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProgrammingLanguage1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pecentage)
+            </td>
+
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-info" }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.ID }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

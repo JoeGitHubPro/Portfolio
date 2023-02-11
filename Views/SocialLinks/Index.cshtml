@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Portfolio.SocialLink>
+
+@{
+    ViewBag.Title = "social media Links";
+}
+<br />
+<h2>social media Links</h2>
+<hr />
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-warning" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SocialCategory.SocialName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SocialLink1)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SocialCategory.SocialName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SocialLink1)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-info" }) |
+        @*@Html.ActionLink("Details", "Details", new { id=item.ID }) |*@
+        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+}
+
+</table>

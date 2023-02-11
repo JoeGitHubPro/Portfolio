@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5ecc03327628416ea5aed5544a3031cc" Name="Diagram1" ZoomLevel="39">
+        <EntityTypeShape EntityType="PortfolioModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AboutCategory" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AboutTopic" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AspNetRole" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.AspNetUser" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.Certifcate" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.EducationCategory" Width="1.5" PointX="7.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.EducationTopic" Width="1.5" PointX="10" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.HeaderCategory" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.Header" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.ProgrammingLanguage" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.Service" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.Skill" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.SocialCategory" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.SocialLink" Width="1.5" PointX="8" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.SumaryCategory" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.SumaryTopic" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="PortfolioModel.FK_AboutTopics_AboutTopics" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_EducationTopics_EducationCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_Headers_HeaderCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_SocialLinks_SocialCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.FK_SumaryTopics_SumaryCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PortfolioModel.Viewer" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PortfolioModel.Image" Width="1.5" PointX="0.75" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
