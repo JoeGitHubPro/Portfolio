@@ -14,7 +14,9 @@
   </a>
 </p>
 
-> This is a portfolio management system with a full web interface and API, made by ASP, SQL Server, MCV, and API. 
+> This is a portfolio management system, which is a web-based application that allows users to manage their portfolios and shares.
+
+The system has a full dashboard that allows users to view all the information on the site. Users can also use this dashboard to manage their portfolios and shares. The system has full pages that are designed for investors who want to see all of their information in one place. Finally, it also has an application programming interface (API) so that third parties can integrate with it.
 ### 🏠 [Homepage](https://github.com/JoeGitHubPro/Portfolio)
 ## Prerequisites
 
