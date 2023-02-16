@@ -1,29 +1,55 @@
 <h1 align="center">Welcome to Portfolio 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
-  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
-  <a href="to get Decomntation vist home page after deploy" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+ <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/SQL%20Server-2019-yellow" />
+  <img src="https://img.shields.io/badge/ASP.Net-4.7.2-%23790c91" />
+  <a target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-no-brightgreen.svg" />
   </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/JoeGitHubPro/Portfolio](https://github.com/JoeGitHubPro/Portfolio)" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE" target="_blank">
-    <img alt="License: ASP.Net" src="https://img.shields.io/github/license/JoeGitHubPro/Portfolio" />
-  </a>
-  <a href="https://twitter.com/https:\/\/twitter.com\/Y\_mohamed\_Ali?t=uW04TUW-iDrdq0u9GFRm9g&s=09" target="_blank">
-    <img alt="Twitter: https:\/\/twitter.com\/Y\_mohamed\_Ali?t=uW04TUW-iDrdq0u9GFRm9g&s=09" src="https://img.shields.io/twitter/follow/https:\/\/twitter.com\/Y\_mohamed\_Ali?t=uW04TUW-iDrdq0u9GFRm9g&s=09.svg?style=social" />
+    <img alt="License: ASP.Net" src="https://img.shields.io/github/license/JoeGitHubPro/TravelAgancyPro" />
   </a>
 </p>
 
 > This is a portfolio management system with a full web interface and API, made by ASP, SQL Server, MCV, and API. 
-
+### 🏠 [Homepage](https://github.com/JoeGitHubPro/Portfolio)
 ## Prerequisites
 
-- npm >=5.5.0
-- node >=9.3.0
+- windows OS 
+- .Net Framework 
+- SQL Server
+## Deploy DataBase
 
+```sh
+Run SQL file at this location [https://github.com/JoeGitHubPro/Portfolio/blob/main/PortfolioSQLQuery.sql] on database server
+```
+
+## Deploy
+
+```sh
+Go to  Web.config file , then change connectionStrings 
+1- put database server name in "Data Source" 
+2- put database name in "Initial Catalog"
+3- put server site username in "User Id"
+4- put server site password in "password"
+
+do those steps twice for "DefaultConnection" and "PortfolioEntities"
+```
+
+
+
+## Web.config edition part
+
+```sh
+
+<add name="DefaultConnection" connectionString="Data Source=database server name;Initial Catalog=database name ;User Id=username;Password= password;Integrated Security=True" providerName="System.Data.SqlClient" />
+    <add name="PortfolioEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=database server name;Initial Catalog=database name ;User Id=username;Password= password;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+	  
+	
+```
 ## Author
 
 👤 **Youssef Mohamed Ali**
