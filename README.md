@@ -40,7 +40,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2023 [Youssef Mohamed Ali](https://github.com/JoeGitHubPro).<br />
-This project is [ASP.Net](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+This project is [ASP.Net] licensed.
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
+
